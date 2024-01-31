@@ -10,3 +10,6 @@ urlpatterns = [
     re_path(r"^(?!api/|admin|static/).*", TemplateView.as_view(template_name="index.html")),
     
 ]
+
+for dir in settings.STATICFILES_DIRS:
+    urlpatterns += static(settings.STATIC_URL, document_root=dir)
