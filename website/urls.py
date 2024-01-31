@@ -12,5 +12,5 @@ urlpatterns = [
 ]
 
 # for dir in settings.STATICFILES_DIRS:
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[1])
 # urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
