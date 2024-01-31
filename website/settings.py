@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-24!jirkejej@4y$h5@#k84&v3n^8medjyhly5ni44$d$mv(3lz"
@@ -102,5 +103,4 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [BASE_DIR / "build/static"]
-STATIC_ROOT = BASE_DIR / "staticfiles"
+STATICFILES_DIRS = [BASE_DIR / "api/static", BASE_DIR / "build/static"]
